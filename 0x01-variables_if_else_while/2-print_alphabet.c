@@ -10,7 +10,7 @@
 /* Program that prints the alphabet in lowercase */
 int main(void)
 {
-	char str_upper[27] = "BENJAMINYANKEYADLLHDAFLH";
+	char str_upper[28] = "BENJAMINYANKEYADLLHDAFLH";
 	int i;
 
 	for (i = 0; i <= 27; i++)
