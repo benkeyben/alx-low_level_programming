@@ -10,10 +10,10 @@
 /* Program that prints the alphabet in lowercase */
 int main(void)
 {
-	char str_upper[30] = "BENJAMINYANKEYADLLHDAFLHDLH";
+	char str_upper[27] = "BENJAMINYANKEYADLLHDAFLHYA";
 	int i;
 
-	for (i = 0; i <= 30; i++)
+	for (i = 0; i <= 27; i++)
 	{
 		putchar(tolower(str_upper[i]));
 	}
