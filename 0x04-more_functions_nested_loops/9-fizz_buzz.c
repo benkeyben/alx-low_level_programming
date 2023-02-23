@@ -1,18 +1,20 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 
 /**
- * fizz_buzz - printst the number from 1 to 100 folowed by a
- * new line
+ * main - printing numbers from 1 to 100 with multiples of
+ * replaced by Fizz, multiples of 5 replaced by Buzz and
+ * multiples of both 3 and 5 replaced by FizzBuzz
  * @void: no parameter
- * Return: no return
+ * Return: return 0
 */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
+
 		if (i % 15 == 0)
 			printf("FizzBuzz");
 		else if (i % 3 == 0)
@@ -23,4 +25,6 @@ void fizz_buzz(void)
 			printf("%d", i);
 		printf("%c", ' ');
 	}
+	printf("%c", '\n');
+	return (0);
 }
