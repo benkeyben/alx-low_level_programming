@@ -1,33 +1,26 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- * Return: return 0
+ * fizz_buzz - printst the number from 1 to 100 folowed by a
+ * new line
+ * @void: no parameter
+ * Return: no return
 */
-int main(void)
+void fizz_buzz(void)
 {
 	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
-
 		if (i % 15 == 0)
-		{
 			printf("FizzBuzz");
-		}
 		else if (i % 3 == 0)
-		{
 			printf("Fizz");
-		}
 		else if (i % 5 == 0)
-		{
 			printf("Buzz");
-		}
 		else
-		{
 			printf("%d", i);
-		}
 		printf("%c", ' ');
 	}
-	return (0);
 }
