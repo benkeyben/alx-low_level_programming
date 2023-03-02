@@ -25,6 +25,10 @@ char *cap_string(char *cap)
 			{
 				cap[i] = ' ';
 			}
+			if (cap[i] == '6')
+			{
+				continue;
+			}
 			cap[i] = cap[i];
 			next_char = i + 1;
 			if (cap[next_char] >= 'A' && cap[next_char] <= 'Z')
@@ -35,3 +39,4 @@ char *cap_string(char *cap)
 	}
 	return (cap);
 }
+
