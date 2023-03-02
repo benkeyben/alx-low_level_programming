@@ -25,7 +25,7 @@ char *cap_string(char *cap)
 			{
 				cap[i] = ' ';
 			}
-			if (cap[i] == '6')
+			if (cap[i] == '6' || cap[i] == '-')
 			{
 				continue;
 			}
@@ -39,4 +39,3 @@ char *cap_string(char *cap)
 	}
 	return (cap);
 }
-
