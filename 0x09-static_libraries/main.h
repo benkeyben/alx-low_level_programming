@@ -1,7 +1,3 @@
-/**
- * Description - Header files containing function prototypes
- * Author: Benjamin Yankey
-*/
 #ifndef MAIN_H
 #define MAIN_H
 
