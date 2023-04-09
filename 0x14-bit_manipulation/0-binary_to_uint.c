@@ -15,16 +15,14 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 		return (0);
-	i = 0;
-	while (b[i] != '\0')
+	for (i = 0; b[i] != '\0'; i++)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		i++;
 	}
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		bi_num = bi_num << 1;
+		bi_num <<= 1;
 		if (b[i] == '1')
 			bi_num += 1;
 	}
